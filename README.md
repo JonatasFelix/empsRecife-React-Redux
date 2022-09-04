@@ -34,4 +34,10 @@ npm i
 npm start
 ```
 
+### Imagens
+#### Desktop![desktop](https://user-images.githubusercontent.com/20983673/188332769-37e3651c-6094-4831-8989-04bac014abb8.png)
+### Mobile![mobile](https://user-images.githubusercontent.com/20983673/188333019-e8825fed-48ea-4410-99ba-abe9607b5fd5.png)
+
+
+
 
