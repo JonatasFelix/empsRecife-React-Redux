@@ -37,3 +37,22 @@ export const Logo = styled.div`
     }
 
 `
+
+export const BoxAux = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+`
+
+export const NavBar = styled.nav`
+    display: flex;
+    gap: 8px;
+`
+
+export const ButtonMenu = styled.button`
+    color: ${props => props.active ? "var(--secondary)" : "var(--white)"};
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+`

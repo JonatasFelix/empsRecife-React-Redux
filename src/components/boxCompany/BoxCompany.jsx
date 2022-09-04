@@ -9,9 +9,7 @@ const BoxCompany = (props) => {
             <s.Subtitle>{description}</s.Subtitle>
             <p><span>Vig. Sanitária: </span>{vigSanitaria}</p>
             <p><span>Cod. Empresa: </span>{cod}</p>
-
             <FavoriteButton name={name} description={description} vigSanitaria={vigSanitaria} cod={cod} />
-
         </s.BoxCompany>
     )
 };

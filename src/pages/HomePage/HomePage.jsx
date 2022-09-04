@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Header from "../../components/header/Header";
 import BoxGroup from "../../components/boxGroup/BoxGroup";
-import { Container } from "../../global/style/Container";
+import { Container } from "../../assets/style/Container";
 import * as s from "./styled";
 
 const HomePage = (props) => {

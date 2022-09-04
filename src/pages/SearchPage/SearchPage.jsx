@@ -4,9 +4,10 @@ import qs from "query-string";
 import Header from "../../components/header/Header";
 import getSearchList from "../../services/getSearchList";
 import BoxCompany from "../../components/boxCompany/BoxCompany";
-import { Container } from "../../global/style/Container";
+import { Container } from "../../assets/style/Container";
 import { Main } from "./styled";
 import Pagination from "../../components/pagination/Pagination";
+import Loader from "../../components/loader/Loader";
 
 
 const SearchPage = () => {
@@ -20,21 +21,16 @@ const SearchPage = () => {
     const parsed = qs.parse(location.search)
     const { q } = parsed;
     
-
     useEffect(() => {
         getSearchList(q, page, setSearchList, setLoading, setTotal);
     }, [q, page]);
 
-
-
-
     return (
         <>
         <Header />
-       
         <Container>
                 <Main>
-                    {loading ? <p>Carregando...</p> : searchList.map((item, index) =>{
+                    {loading ?  <Loader/> : searchList.map((item, index) =>{
                         return (
                             <BoxCompany
                                 cod={item.cod_empresa}

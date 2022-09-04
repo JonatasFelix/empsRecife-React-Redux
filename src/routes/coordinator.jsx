@@ -10,3 +10,7 @@ export const goSearchPage = (navigate, search) => {
 export const goHomePage = (navigate) => {
   navigate(`/`)
 }
+
+export const goToFavoritesPage = (navigate) => {
+  navigate(`/favorites`)
+}

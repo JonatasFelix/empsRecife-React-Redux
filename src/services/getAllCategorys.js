@@ -2,8 +2,7 @@ import axios from 'axios'
 import { BASE_URL } from '../constants/BASE_URL'
 import changeStateGroups from '../store/action/changeStateGroups';
 
-
-export const getAllCategorys = async (dispatch) => {
+const getAllCategorys = async (dispatch) => {
     let groups = [];
     let loading = true;
 
@@ -19,3 +18,5 @@ export const getAllCategorys = async (dispatch) => {
 
     dispatch(changeStateGroups({ groups, loading }));
 };
+
+export default getAllCategorys;

@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { BASE_URL_DIRETO } from '../constants/BASE_URL'
 
-
 const getSearchList = async (search, page, setList, setLoading, setTotal) => {
     page = page.selected * 10 || 0
     await axios
@@ -15,7 +14,6 @@ const getSearchList = async (search, page, setList, setLoading, setTotal) => {
             setList([])
             setLoading(false)
         });
-
 };
 
 export default getSearchList;

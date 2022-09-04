@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     :root {
         --primary: #044FA1;
         --secondary: #FDDF19;
@@ -31,3 +31,5 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 `;
+
+export default GlobalStyle;

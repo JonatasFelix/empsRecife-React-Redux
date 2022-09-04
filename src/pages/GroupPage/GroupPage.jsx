@@ -4,8 +4,9 @@ import getCategoryItens from "../../services/getCategoryItens";
 import Header from "../../components/header/Header";
 import Pagination from "../../components/pagination/Pagination";
 import BoxCompany from "../../components/boxCompany/BoxCompany";
-import { Container } from "../../global/style/Container";
+import { Container } from "../../assets/style/Container";
 import { Main } from "./styled";
+import Loader from "../../components/loader/Loader";
 
 const GroupPage = () => {
 
@@ -22,26 +23,23 @@ const GroupPage = () => {
     return(
         <>
         <Header/>
-
         <Container>
-        <Main>
-            {loading ? <p>Carregando...</p> : list.map((item) =>{
-                return (
-                    <BoxCompany
-                        cod={item.cod_empresa}
-                        name={item.razao_social}
-                        description={item.desc_atividade}
-                        vigSanitaria={item.atividade_vig_sanitaria}
-                    />
-                )
-            })}
-        </Main>
-        <Pagination setPage={setPage} page={page} loading={loading} total={total}/>
+            <Main>
+                {loading ?  <Loader/> : list.map((item) =>{
+                    return (
+                        <BoxCompany
+                            cod={item.cod_empresa}
+                            name={item.razao_social}
+                            description={item.desc_atividade}
+                            vigSanitaria={item.atividade_vig_sanitaria}
+                        />
+                    )
+                })}
+            </Main>
+            <Pagination setPage={setPage} page={page} loading={loading} total={total}/>
         </Container>
         </>
     )
-
 }
-
 
 export default GroupPage;

@@ -6,8 +6,9 @@ export const BoxCompany = styled.div`
     align-items: center;
     flex-direction: column;
     text-align: center;
+    position: relative;
 
-    padding: 20px;
+    padding: 20px 20px 10px;
 
     border-radius: 26px;
     background: linear-gradient(315deg, #c3c3c3, #e8e8e8);
