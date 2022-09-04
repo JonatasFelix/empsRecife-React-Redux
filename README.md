@@ -6,6 +6,9 @@
 ### LINK SURGE
 [Clique aqui para visualizar o empsRecife!](http://empsrecife.surge.sh/)
 
+### Layout no Figma
+[Clique aqui para visualizar o layout no figma](https://www.figma.com/file/XmserfJ8UZIhclPutr855u/empsRecife?node-id=0%3A1)
+
 ### Informações
 - Aplicação criada com o intuito de aprendizado da biblioteca Redux, onde o mesmo é utilizado para armazenar a lista de categorias e também a de favoritos.
 
